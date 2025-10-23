@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3 Solution - Food, LLC Menu</title>
+    
+    <!-- Bootstrap CSS CDN (v3.3.7) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" xintegrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom CSS Link (Points to css/styles.css) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!--
+        NAVBAR: 
+        - Uses 'navbar-default' which is NOT fixed and scrolls with the page.
+        - Brand name "Food, LLC" is on the left.
+    -->
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- Company Name/Brand (left-aligned) -->
+                    <a href="#" class="navbar-brand">Food, LLC</a>
+
+                    <!-- Mobile Menu Toggle Button (Visible ONLY on xs screens) -->
+                    <!-- Bootstrap hides this button by default on 'sm' and 'md' breakpoints. -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <!-- Hamburger icon bars -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- 
+                    Collapsible Menu Content 
+                    - This div contains the links for the mobile dropdown.
+                    - It takes full width on 'xs' and is automatically hidden/collapsed on 'sm' and 'md'.
+                    - Custom background set in styles.css on #collapsable-nav.
+                -->
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <!-- The 'visible-xs' class ensures this list of links is only part of the navbar on mobile -->
+                    <ul id="nav-list" class="nav navbar-nav visible-xs">
+                        <li><a href="#chicken-section">Chicken</a></li>
+                        <li><a href="#beef-section">Beef</a></li>
+                        <li><a href="#sushi-section">Sushi</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+        </nav><!-- /#header-nav -->
+    </header>
+
+    <!-- Page Heading: Centered using the Bootstrap 'text-center' class -->
+    <div class="container">
+        <h1 id="menu-heading" class="text-center">Our Menu</h1>
+    </div>
+
+    <!--
+        MAIN CONTENT SECTION:
+        - Wrapped in a container-fluid for edge-to-edge feel with slight margin.
+        - Uses the Bootstrap Grid with col-xs-12 to ensure full width across ALL views (xs, sm, md, lg).
+        - Height and background color are set in styles.css on #main-content-section.
+    -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- This div is guaranteed to take 100% of the row width on ALL screen sizes -->
+            <div class="col-xs-12" id="main-content-section">
+                <div id="main-content-box">
+                    <h2 class="text-center" id="chicken-section">Chicken</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h2 class="text-center" id="beef-section">Beef</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <h2 class="text-center" id="sushi-section">Sushi</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <!-- 
+                        Adding more dummy text to guarantee the section is very tall 
+                        and requires scrolling to view the bottom.
+                    -->
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery (required for Bootstrap's JavaScript plugins - must come first) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap JS (v3.3.7) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" xintegrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
